@@ -1,0 +1,15 @@
+@host=https://localhost:44372
+@host2=https://passwordgenerateservice.azurewebsites.net
+
+###
+GET {{host2}}/password/generate?length=10
+
+###
+POST {{host2}}/password/generatepost
+Content-Type: application/json
+
+{
+    "length":10,
+    "count":25
+}
+
